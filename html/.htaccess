@@ -423,13 +423,6 @@ FileETag None
 # RewriteCond %{HTTPS} !=on
 # RewriteCond %{HTTP_HOST} !^www\.example\.com [NC]
 # RewriteRule ^(.*) http://www.example.com/$1 [R=301,L,NE]
-
-# Allow any files or directories that exist to be displayed directly
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-
-# Rewrite all other URLs to index.php/URL
-  RewriteRule .* index.php/$0 [PT]
 </IfModule>
 
 # ----------------------------------------------------------------------

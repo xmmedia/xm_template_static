@@ -16,23 +16,12 @@ var paths = {
 		// local
 		{
 			dest : 'html/js',
-			destFile : 'base.min.js',
+			destFile : 'public.min.js',
 			files :
 				[
 					'html/js/src/modernizr.min.js',
 					'html/js/src/jquery.min.js',
 					'html/js/src/base.js'
-				]
-		},
-		{
-			dest : 'html/js',
-			destFile : 'private.min.js',
-			files :
-				[
-					'html/js/src/jquery-ui.min.js',
-					'html/xm/js/src/xm.js',
-					'html/xm/js/src/ajax.js',
-					'html/js/src/private.js'
 				]
 		},
 		// xm module

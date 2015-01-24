@@ -1,12 +1,5 @@
-@import "_vars", "_media", "_normalize", "../../xm/css/sass/_xm_mixins", "../../xm/css/sass/_xm_helpers", "_clearfix";
-
 *, *:after, *:before { box-sizing: border-box; }
 .clearfix { @extend %clearfix; }
-
-/** xm mixins **/
-$debug_msg_img: url('/xm/images/message-debug.gif');
-@include xm_all();
-/* end xm mixins */
 
 html, input { font-family: Arial, Helvetica, sans-serif; font-size: 0.8em; }
 input { font-size: 0.9em; }
@@ -31,7 +24,7 @@ label { cursor: pointer; }
 td { vertical-align: top; }
 img, object, embed { max-width: 100%; }
 img { height: auto; }
-nav ul { list-style: none; }
+nav ul { padding-left: 0; list-style: none; }
 
 /** commonly used styles **/
 .xm_message { color: #000; padding: 0; }
@@ -50,5 +43,3 @@ img {
 	&.right { float: right; margin-bottom: $grid_pad; margin-left: $grid_pad; }
 	&.left { float: left; margin-right: $grid_pad; margin-bottom: $grid_pad; }
 }
-
-@import "_debug", "_grid";
